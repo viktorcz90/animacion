@@ -1,0 +1,32 @@
+*{
+height: 700px;
+width: 700px;
+margin: 0 auto;
+}
+.cuadrado {
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    border: red 5px solid;
+    
+}
+
+.pelota{
+    
+    width: 100px;
+    height:100px;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    position:relative;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mianimacion {
+    0% {left: 0; top:0px; }
+    25% {left: 400px; top:512px; }
+    50% {left:512px; top:400px; }
+    75% {left: 200px; top:150px;}
+    100% {left:0px; top:0px;}
+    
+}
