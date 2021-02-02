@@ -1,0 +1,87 @@
+*{
+height: 700px;
+width: 700px;
+margin: 0 auto;
+}
+.cuadrado {
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    border: red 5px solid;
+    
+}
+
+.pelota{
+    
+    width: 100px;
+    height:100px;
+    position:relative;
+    animation-name: pelota;
+    animation: bounce 0.9s linear infinite;
+    animation-duration: 2.3s;
+}
+
+@keyframes bounce {
+    0%{
+        transform:translateY(200px) translateX(-230px) ;
+    }
+
+    10% {
+        height:100px;
+        width:90px; 
+        
+    }
+    15%{
+        height:100px;
+        width:110px; 
+
+    }
+
+    25% {
+        height: 100px;
+        width:115px;
+        transform:translateY(520px) translateX(30px)  ;
+        }
+
+        30%{
+            height: 110px;
+            width:110px;
+            
+            
+        }
+
+    50%{
+            height: 100px;
+            width:90px;
+            transform:translateY(300px) translateX(530px);
+            
+    }
+    60%{
+        height: 90px;
+        width:90px;
+    }
+    
+    75%{
+        height: 90px;
+        width:106px;
+        transform:translateY(530px) translateX(470px);
+
+    }
+    100%{
+        height: 105px;
+        width: 100px;
+        transform:translateY(350px) translateX(390px);
+        animation:ease-out;
+
+    }
+    }
+    @keyframes pelota {
+
+    }
+
+  
+    /*50% {height: 80px; width:110px; }
+    75% {left: 200px; top:150px;}
+    100% {left:0px; top:0px;}
+    
+}
